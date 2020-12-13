@@ -15,7 +15,7 @@ First, the rules of the game -
 
 ## Additional Features 
 The source code in this repository is my version of this game. Apart from all the above rules, I have incorporated some more features that might ensure a better gameplay. The additional features include - 
-* Since the game is command line based (needs to be played on terminal), keys 'a', 's', 'd', 'w', 'u', 'h' should be used to play the game for left, down, right, up, undo and hint moves respectively.
+* Since the game is command line based (needs to be played on terminal), keys 'a', 's', 'd', 'w', 'u', 'h' should be used to play the game for left, down, right, up, undo and hint moves respectively. Each such character needs to be followed by 'Enter' key.
 
 * 2 other functions namely **undo** and **hint** have been added. Undo function displays the board (and score of the player) before the latest move. It can be used at max twice in my version, but can be tweaked if required. Hint function displays the state of the board after all the 4 possible moves (up,down,left,right). This would help the player make a more informed choice.
 
@@ -29,3 +29,6 @@ The source code includes 1 driver file (that calls all other functions) and 4 ot
 
 ## How to play on your machine ?
 To play the game locally, clone the repository and download the source files. Store them in a designated folder on your local machine. From that directory, if you are a linux/mac user, run the command `make` on terminal. Just doing this will run the makefile and produce the executable. If you are a windows user using cmd, run `g++ driver.cpp basic_functions.cpp helper_functions.cpp moves.cpp operations.cpp`.
+
+## To do
+Design a GUI for this command line game, so that it is much more appealing to play. I also plan to host it for public use after that by creating a website for the same. 
